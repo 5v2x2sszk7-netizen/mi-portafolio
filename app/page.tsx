@@ -33,6 +33,58 @@ export default function Home() {
 
         <hr className="border-neutral-800" />
 
+        {/* SECCIÓN NUEVA: PROYECTOS DESTACADOS */}
+        <section className="space-y-6">
+          <div className="space-y-1">
+            <h2 className="text-2xl font-bold tracking-tight text-neutral-200">Proyectos Destacados</h2>
+            <p className="text-sm text-neutral-500">Diseñados para asegurar calidad y rendimiento</p>
+          </div>
+          
+          <div className="space-y-4">
+            {/* Proyecto 01 */}
+            <div className="p-6 bg-neutral-900/40 border border-neutral-800 rounded-2xl space-y-4">
+              <div className="flex justify-between items-start">
+                <div>
+                  <span className="text-xs font-mono text-blue-400 uppercase tracking-wider">Proyecto 01</span>
+                  <h3 className="text-lg font-bold text-neutral-200 mt-1">Framework de Automatización Móvil</h3>
+                </div>
+              </div>
+              <p className="text-sm text-neutral-400 leading-relaxed">
+                Diseño e implementación de un marco de trabajo para pruebas automatizadas end-to-end orientadas a dispositivos Android, optimizando los ciclos de regresión críticos.
+              </p>
+              <div className="flex flex-wrap gap-1.5 pt-2">
+                {['Katalon Studio', 'Groovy', 'Android', 'Jira'].map((tech) => (
+                  <span key={tech} className="px-2.5 py-0.5 bg-neutral-800/60 text-[11px] font-mono rounded-md text-blue-300 border border-neutral-700/30">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Proyecto 02 */}
+            <div className="p-6 bg-neutral-900/40 border border-neutral-800 rounded-2xl space-y-4">
+              <div className="flex justify-between items-start">
+                <div>
+                  <span className="text-xs font-mono text-purple-400 uppercase tracking-wider">Proyecto 02</span>
+                  <h3 className="text-lg font-bold text-neutral-200 mt-1">Portal de Recursos Humanos & Microservicios</h3>
+                </div>
+              </div>
+              <p className="text-sm text-neutral-400 leading-relaxed">
+                Desarrollo full-stack de una plataforma web interactiva conectada a microservicios independientes, garantizando alta disponibilidad y consistencia de datos.
+              </p>
+              <div className="flex flex-wrap gap-1.5 pt-2">
+                {['Next.js', 'Laravel', 'APIs', 'MySQL', 'Tailwind CSS'].map((tech) => (
+                  <span key={tech} className="px-2.5 py-0.5 bg-neutral-800/60 text-[11px] font-mono rounded-md text-purple-300 border border-neutral-700/30">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr className="border-neutral-800" />
+
         {/* SECCIÓN: SKILLS */}
         <section className="space-y-6">
           <h2 className="text-2xl font-bold tracking-tight text-neutral-200">Competencias Técnicas</h2>
@@ -62,6 +114,8 @@ export default function Home() {
 
           </div>
         </section>
+
+        <hr className="border-neutral-800" />
 
         {/* SECCIÓN: EXPERIENCIA LABORAL */}
         <section className="space-y-6">
