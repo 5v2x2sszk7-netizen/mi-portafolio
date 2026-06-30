@@ -15,21 +15,18 @@ export default function Home() {
             Ingeniero en Desarrollo de Software especializado en el Aseguramiento de Calidad (QA) con un perfil híbrido enfocado en automatización end-to-end y sólidas bases en desarrollo backend con Laravel y frontend moderno con Next.js.
           </p>
           
-          {/* Enlaces de contacto limpios */}
+        {/* Enlaces de contacto limpios */}
           <div className="flex flex-wrap gap-4 pt-2 text-sm text-neutral-400">
             <a href="mailto:gustavoangelmalob@gmail.com" className="hover:text-blue-400 transition flex items-center gap-1">
               📧 gustavoangelmalob@gmail.com
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition flex items-center gap-1">
-              💼 LinkedIn
+            <a href="https://www.linkedin.com/in/gustavo-angel-malo-bautista-650b67351" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition flex items-center gap-1">
+              💼 LinkedIn (gustavo-angel-malo-bautista)
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition flex items-center gap-1">
-              💻 GitHub
+            <a href="https://github.com/5v2x2sszk7-netizen" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition flex items-center gap-1">
+              💻 GitHub (5v2x2sszk7-netizen)
             </a>
           </div>
-        </header>
-
-        <hr className="border-neutral-800" />
 
         {/* SECCIÓN: SKILLS */}
         <section className="space-y-6">
