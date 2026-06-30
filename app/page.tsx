@@ -4,14 +4,14 @@ const featuredProjects = [
     label: "Automatizacion QA",
     title: "Automatizacion de pruebas para Android",
     summary:
-      "Trabaje en la automatizacion de pruebas para dispositivos Android con Katalon Studio, enfocandome en flujos funcionales y escenarios de regresion donde la confiabilidad de cada validacion era clave.",
+      "Participe en la automatizacion de pruebas para dispositivos Android con Katalon Studio, cubriendo flujos funcionales y escenarios de regresion donde la estabilidad de cada validacion era clave para el seguimiento del producto.",
     impact:
-      "Mayor consistencia en la validacion de procesos criticos y mejor soporte para ciclos de prueba mas ordenados.",
+      "Mayor consistencia en la validacion de procesos criticos, mejor seguimiento de hallazgos y una base mas ordenada para ciclos de prueba recurrentes.",
     stack: ["Katalon Studio", "Groovy", "Android", "Jira"],
   },
   {
     id: "02",
-    label: "Proyecto Real",
+    label: "Proyecto real",
     title: "MALO Fragances",
     summary:
       "Sitio para una perfumeria de nicho con seleccion curada, enfocado en presentar catalogo, disponibilidad, precios claros y una experiencia de compra asistida con cierre por WhatsApp.",
@@ -19,25 +19,16 @@ const featuredProjects = [
       "Una presencia digital mas clara para la marca, con catalogo visible, lenguaje sobrio y un proceso de compra mas directo y confiable.",
     stack: ["E-commerce", "Catalogo", "WhatsApp", "UX", "Branding"],
     href: "https://www.malofragances.mx",
+    previewTitle: "MALO Fragances",
+    previewEyebrow: "Perfumeria de nicho",
+    previewMeta: ["Catalogo curado", "WhatsApp", "Stock real"],
   },
 ];
 
-const principles = [
-  {
-    title: "Claridad tecnica",
-    description:
-      "Trabajo con criterios de aceptacion claros, cobertura util y decisiones tecnicas que se sostienen mas alla de una sola entrega.",
-  },
-  {
-    title: "Entrega confiable",
-    description:
-      "Priorizo estabilidad, trazabilidad y una validacion que reduzca incertidumbre antes de cada release.",
-  },
-  {
-    title: "Escala sobria",
-    description:
-      "Busco arquitectura e integraciones que permitan crecer sin perder orden, legibilidad ni calidad operativa.",
-  },
+const currentFocus = [
+  "Automatizacion de pruebas funcionales y de regresion con Katalon Studio.",
+  "Desarrollo web con Laravel, Next.js y React.",
+  "Validacion de requerimientos, seguimiento de defectos y mejora continua.",
 ];
 
 const capabilities = [
@@ -45,20 +36,26 @@ const capabilities = [
     title: "QA automation",
     description:
       "Estructuro pruebas funcionales, de regresion y validacion end-to-end para reducir riesgo, fortalecer cobertura y volver mas confiables los despliegues.",
-    items: ["Katalon Studio", "Pruebas funcionales", "Regresion", "Casos de prueba"],
   },
   {
     title: "Desarrollo full-stack",
     description:
       "Desarrollo interfaces y servicios web con una base clara de arquitectura, integracion y mantenibilidad, cuidando tanto la experiencia como la solidez tecnica.",
-    items: ["Next.js", "React", "Laravel", "PHP", "MySQL", "APIs"],
   },
   {
     title: "Calidad operativa",
     description:
       "Documento hallazgos, acompano seguimiento de defectos y colaboro con equipos para convertir incidencias en mejoras sostenibles.",
-    items: ["Jira", "Validacion funcional", "Seguimiento de defectos", "Documentacion"],
   },
+];
+
+const techStack = [
+  "Katalon Studio / QA funcional",
+  "Next.js / React",
+  "Laravel / PHP",
+  "JavaScript / Python / Java / C++",
+  "MySQL / Oracle / SQL Server",
+  "Git / GitHub / Scrum / Google Cloud",
 ];
 
 const profileDetails = [
@@ -117,7 +114,7 @@ const contactLinks = [
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#0a0a0a] text-stone-100 selection:bg-stone-200 selection:text-stone-900">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.09),transparent_32%),radial-gradient(circle_at_85%_15%,rgba(255,255,255,0.04),transparent_24%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.08),transparent_32%),radial-gradient(circle_at_85%_15%,rgba(255,255,255,0.04),transparent_24%)]" />
       <div className="relative mx-auto max-w-7xl px-6 py-6 sm:px-10 lg:px-12">
         <header className="flex items-center justify-between border-b border-white/10 py-5">
           <div className="space-y-1">
@@ -133,7 +130,7 @@ export default function Home() {
               Proyectos
             </a>
             <a href="#capacidades" className="transition hover:text-stone-100">
-              Capacidades
+              Stack
             </a>
             <a href="#contacto" className="transition hover:text-stone-100">
               Contacto
@@ -141,127 +138,103 @@ export default function Home() {
           </nav>
         </header>
 
-        <section className="grid gap-16 border-b border-white/10 py-24 lg:grid-cols-[minmax(0,1.2fr)_minmax(300px,0.8fr)] lg:gap-10">
-          <div className="max-w-4xl space-y-10">
-            <div className="space-y-6">
+        <section className="grid gap-12 border-b border-white/10 py-24 lg:grid-cols-[minmax(0,1.15fr)_360px] lg:items-start">
+          <div className="space-y-10">
+            <div className="space-y-5">
               <p className="font-mono text-[11px] uppercase tracking-[0.32em] text-stone-500">
-                Portafolio selectivo / calidad, producto y ejecucion
+                Portafolio / QA automation / desarrollo web
               </p>
-              <h1 className="max-w-5xl text-5xl font-semibold leading-[0.98] tracking-[-0.04em] text-stone-50 sm:text-6xl lg:text-[5.5rem]">
-                Aporto claridad, control y criterio tecnico a procesos de
-                calidad y desarrollo web.
+              <h1 className="text-5xl font-semibold leading-[0.95] tracking-[-0.05em] text-stone-50 sm:text-6xl lg:text-7xl">
+                Gustavo
+                <br />
+                Angel Malo
+                <br />
+                Bautista
               </h1>
-            </div>
-
-            <div className="grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(260px,0.85fr)]">
-              <p className="max-w-2xl text-lg leading-8 text-stone-300 sm:text-[1.35rem] sm:leading-9">
-                Ingeniero en Desarrollo y Gestion de Software con perfil
-                hibrido enfocado en aseguramiento de calidad, automatizacion de
-                pruebas y desarrollo web con Laravel y Next.js.
-              </p>
-              <div className="rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6">
-                <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
-                  Propuesta de valor
-                </p>
-                <p className="mt-4 text-base leading-7 text-stone-300">
-                  Combino validacion funcional, automatizacion y base de
-                  desarrollo para aportar mas confiabilidad, estabilidad y
-                  mejora continua al producto.
+              <div className="space-y-2 text-lg text-stone-300 sm:text-xl">
+                <p>QA Automation · Desarrollo Web · Mejora Continua</p>
+                <p className="max-w-3xl text-base leading-8 text-stone-400 sm:text-lg">
+                  Ingeniero en Desarrollo y Gestion de Software con enfoque en
+                  aseguramiento de calidad, automatizacion de pruebas y
+                  productos web mejor ejecutados.
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="#proyectos"
-                className="rounded-full bg-stone-100 px-6 py-3 text-sm font-medium text-stone-950 transition hover:bg-stone-200"
-              >
-                Ver proyectos
-              </a>
-              <a
-                href="#contacto"
-                className="rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-stone-100 transition hover:border-white/30 hover:bg-white/5"
-              >
-                Contactar
-              </a>
+            <div className="max-w-3xl space-y-5">
+              <p className="text-base leading-8 text-stone-300 sm:text-lg">
+                Perfil hibrido con experiencia en validacion funcional,
+                automatizacion con Katalon Studio y desarrollo con Laravel,
+                Next.js y React. Busco aportar claridad, control y seguimiento
+                tecnico sobre procesos que necesitan mayor confiabilidad.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="#proyectos"
+                  className="rounded-full bg-stone-100 px-6 py-3 text-sm font-medium text-stone-950 transition duration-300 hover:-translate-y-0.5 hover:bg-stone-200"
+                >
+                  Ver proyectos
+                </a>
+                <a
+                  href="#contacto"
+                  className="rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-stone-100 transition duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/5"
+                >
+                  Disponible para colaborar
+                </a>
+              </div>
             </div>
           </div>
 
-          <aside className="flex flex-col justify-between gap-8 rounded-[2.25rem] border border-white/10 bg-white/[0.03] p-8">
+          <aside className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-8">
             <div className="space-y-6">
-              <div className="space-y-2">
-                <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
-                  Perfil
-                </p>
-                <p className="text-3xl font-medium tracking-tight text-stone-100">
-                  Calidad, criterio tecnico y una ejecucion sobria.
-                </p>
-              </div>
-              <p className="text-base leading-7 text-stone-400">
-                Busco desarrollarme como QA Tester Jr., aportando una mirada
-                tecnica orientada a calidad, seguimiento de hallazgos y mejora
-                continua del producto.
-              </p>
-            </div>
-
-            <div className="grid gap-5 border-t border-white/10 pt-6 sm:grid-cols-3 lg:grid-cols-1">
-              {profileDetails.map((detail) => (
-                <div key={detail.label}>
-                  <p className="font-mono text-xs uppercase tracking-[0.24em] text-stone-500">
-                    {detail.label}
+              <div className="space-y-3">
+                <span className="inline-flex rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">
+                  Disponible
+                </span>
+                <div className="space-y-1">
+                  <p className="text-2xl font-medium text-stone-100">
+                    QA Tester Jr.
                   </p>
-                  {detail.href ? (
-                    <a
-                      href={detail.href}
-                      className="mt-2 block text-sm leading-6 text-stone-300 transition hover:text-stone-100"
-                    >
-                      {detail.value}
-                    </a>
-                  ) : (
-                    <p className="mt-2 text-sm leading-6 text-stone-300">
-                      {detail.value}
-                    </p>
-                  )}
+                  <p className="text-sm text-stone-400">
+                    QA automation y desarrollo web
+                  </p>
                 </div>
-              ))}
+              </div>
+
+              <div className="space-y-4 border-t border-white/10 pt-6">
+                {profileDetails.map((detail) => (
+                  <div key={detail.label}>
+                    <p className="font-mono text-[11px] uppercase tracking-[0.24em] text-stone-500">
+                      {detail.label}
+                    </p>
+                    {detail.href ? (
+                      <a
+                        href={detail.href}
+                        className="mt-2 block text-sm leading-6 text-stone-300 transition hover:text-stone-100"
+                      >
+                        {detail.value}
+                      </a>
+                    ) : (
+                      <p className="mt-2 text-sm leading-6 text-stone-300">
+                        {detail.value}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <div className="border-t border-white/10 pt-6">
+                <p className="font-mono text-[11px] uppercase tracking-[0.24em] text-stone-500">
+                  En que estoy enfocado
+                </p>
+                <div className="mt-4 space-y-3 text-sm leading-7 text-stone-300">
+                  {currentFocus.map((item) => (
+                    <p key={item}>- {item}</p>
+                  ))}
+                </div>
+              </div>
             </div>
           </aside>
-        </section>
-
-        <section className="grid gap-10 border-b border-white/10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]">
-          <div className="space-y-3">
-            <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
-              Enfoque
-            </p>
-            <p className="max-w-[180px] text-sm leading-6 text-stone-400">
-              Una forma de trabajo centrada en precision, estabilidad y criterio
-              de largo plazo.
-            </p>
-          </div>
-          <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
-            <div className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-8">
-              <p className="max-w-3xl text-2xl font-medium leading-10 tracking-tight text-stone-100">
-                La calidad no aparece al final del proceso. Se define desde el
-                flujo, la arquitectura y la forma en que cada entrega se
-                valida.
-              </p>
-            </div>
-            <div className="grid gap-4">
-              {principles.map((principle) => (
-                <article
-                  key={principle.title}
-                  className="rounded-[1.5rem] border border-white/10 p-6"
-                >
-                  <h3 className="text-lg font-medium text-stone-100">
-                    {principle.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-7 text-stone-400">
-                    {principle.description}
-                  </p>
-                </article>
-              ))}
-            </div>
-          </div>
         </section>
 
         <section
@@ -270,42 +243,43 @@ export default function Home() {
         >
           <div className="space-y-3">
             <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
-              Selected work
+              Proyectos
             </p>
             <h2 className="text-3xl font-semibold tracking-tight text-stone-100">
               Proyectos destacados
             </h2>
+            <p className="max-w-[190px] text-sm leading-6 text-stone-400">
+              Casos seleccionados que muestran trabajo real y experiencia
+              tecnica aplicada.
+            </p>
           </div>
           <div className="space-y-6">
             {featuredProjects.map((project) => (
               <article
                 key={project.id}
-                className="rounded-[2.25rem] border border-white/10 bg-white/[0.02] p-8 transition duration-300 hover:border-white/20 hover:bg-white/[0.035]"
+                className="group rounded-[2rem] border border-white/10 bg-white/[0.02] p-8 transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.035]"
               >
-                <div className="flex flex-col gap-8 lg:flex-row lg:justify-between">
-                  <div className="max-w-2xl space-y-5">
-                    <div className="space-y-3">
-                      <div className="flex flex-wrap items-center gap-3">
-                        <span className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
-                          {project.id}
-                        </span>
-                        <span className="h-px w-10 bg-white/10" />
-                        <span className="text-sm text-stone-400">{project.label}</span>
-                      </div>
-                      <h3 className="text-3xl font-medium tracking-tight text-stone-100">
-                        {project.title}
-                      </h3>
-                    </div>
-                    <p className="text-base leading-8 text-stone-300">
-                      {project.summary}
+                <div className="grid gap-8 lg:grid-cols-[100px_minmax(0,1fr)]">
+                  <div className="space-y-2">
+                    <p className="text-4xl font-semibold tracking-tight text-stone-100">
+                      {project.id}
+                    </p>
+                    <p className="text-xs uppercase tracking-[0.18em] text-stone-500">
+                      {project.label}
                     </p>
                   </div>
 
-                  <div className="max-w-sm rounded-[1.6rem] border border-white/10 bg-black/20 p-6">
-                    <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
-                      Resultado
-                    </p>
-                    <p className="mt-4 text-sm leading-7 text-stone-300">
+                  <div className="space-y-6">
+                    <div className="space-y-4">
+                      <h3 className="text-3xl font-medium tracking-tight text-stone-100">
+                        {project.title}
+                      </h3>
+                      <p className="max-w-3xl text-base leading-8 text-stone-300">
+                        {project.summary}
+                      </p>
+                    </div>
+
+                    <p className="max-w-2xl text-sm leading-7 text-stone-400">
                       {project.impact}
                     </p>
                   </div>
@@ -315,12 +289,50 @@ export default function Home() {
                   {project.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-full border border-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.16em] text-stone-300"
+                      className="rounded-full border border-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.16em] text-stone-300 transition duration-300 group-hover:border-white/20"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
+
+                {project.previewTitle ? (
+                  <div className="mt-8 overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#0d0d0d]">
+                    <div className="flex items-center gap-2 border-b border-white/10 px-5 py-3">
+                      <span className="h-2.5 w-2.5 rounded-full bg-stone-600" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-stone-700" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-stone-800" />
+                      <span className="ml-3 text-[11px] uppercase tracking-[0.18em] text-stone-500">
+                        Vista del proyecto
+                      </span>
+                    </div>
+                    <div className="grid gap-8 px-6 py-7 lg:grid-cols-[minmax(0,1fr)_220px]">
+                      <div className="space-y-4">
+                        <p className="text-[11px] uppercase tracking-[0.22em] text-stone-500">
+                          {project.previewEyebrow}
+                        </p>
+                        <h4 className="text-3xl font-medium tracking-tight text-stone-100">
+                          {project.previewTitle}
+                        </h4>
+                        <p className="max-w-xl text-sm leading-7 text-stone-400">
+                          Menos catalogo infinito. Mas curaduria. Una experiencia
+                          breve, clara y personal con disponibilidad visible,
+                          precios nitidos y cierre por WhatsApp.
+                        </p>
+                      </div>
+                      <div className="space-y-3 rounded-[1.3rem] border border-white/10 bg-white/[0.03] p-5">
+                        {project.previewMeta?.map((item) => (
+                          <div
+                            key={item}
+                            className="rounded-full border border-white/10 px-3 py-2 text-xs uppercase tracking-[0.16em] text-stone-300"
+                          >
+                            {item}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ) : null}
 
                 {project.href ? (
                   <div className="mt-6">
@@ -328,7 +340,7 @@ export default function Home() {
                       href={project.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex rounded-full border border-white/15 px-4 py-2 text-xs font-medium uppercase tracking-[0.16em] text-stone-200 transition hover:border-white/30 hover:bg-white/5"
+                      className="inline-flex rounded-full border border-white/15 px-4 py-2 text-xs font-medium uppercase tracking-[0.16em] text-stone-200 transition duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/5"
                     >
                       Ver sitio
                     </a>
@@ -339,110 +351,46 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="grid gap-10 border-b border-white/10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]">
-          <div className="space-y-3">
-            <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
-              Formacion
-            </p>
-            <p className="max-w-[190px] text-sm leading-6 text-stone-400">
-              Base academica, formacion complementaria e interes por seguir
-              creciendo.
-            </p>
-          </div>
-          <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-            <div className="space-y-6">
-              {education.map((item) => (
-                <article
-                  key={item.title}
-                  className="rounded-[2rem] border border-white/10 p-8"
-                >
-                  <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
-                    Formacion academica
-                  </p>
-                  <h3 className="mt-4 text-2xl font-medium tracking-tight text-stone-100">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-stone-400">{item.institution}</p>
-                  <p className="mt-4 text-sm leading-7 text-stone-300">
-                    {item.description}
-                  </p>
-                </article>
-              ))}
-            </div>
-            <div className="space-y-6">
-              {certifications.map((item) => (
-                <article
-                  key={item.title}
-                  className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-8"
-                >
-                  <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
-                    Curso y certificacion
-                  </p>
-                  <h3 className="mt-4 text-2xl font-medium tracking-tight text-stone-100">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-stone-400">{item.institution}</p>
-                  <p className="mt-2 text-sm text-stone-500">{item.meta}</p>
-                  <p className="mt-4 text-sm leading-7 text-stone-300">
-                    {item.description}
-                  </p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section
           id="capacidades"
           className="grid gap-10 border-b border-white/10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]"
         >
           <div className="space-y-3">
             <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
-              Capacidades
+              Tecnologias y stack
             </p>
             <p className="max-w-[190px] text-sm leading-6 text-stone-400">
-              Herramientas, criterio y experiencia convertidos en capacidad de
-              ejecucion.
+              Base tecnica resumida para entender rapido en que puedo aportar.
             </p>
           </div>
           <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-            {capabilities.map((capability) => (
-              <article
-                key={capability.title}
-                className="rounded-[1.9rem] border border-white/10 p-7"
-              >
-                <h3 className="text-2xl font-medium tracking-tight text-stone-100">
-                  {capability.title}
-                </h3>
-                <p className="mt-4 max-w-xl text-sm leading-7 text-stone-400">
-                  {capability.description}
-                </p>
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {capability.items.map((item) => (
-                    <span
-                      key={item}
-                      className="rounded-full bg-white/[0.04] px-3 py-1 text-xs text-stone-300"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </article>
-            ))}
-            <article className="rounded-[1.9rem] border border-white/10 bg-white/[0.02] p-7">
-              <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
-                Forma de colaborar
-              </p>
-              <p className="mt-4 text-xl font-medium leading-9 tracking-tight text-stone-100">
-                Aporto mejor en equipos que valoran orden, seguimiento claro y
-                una ejecucion tecnica cuidada.
-              </p>
-              <p className="mt-4 text-sm leading-7 text-stone-400">
-                Priorizo comunicacion util, documentacion entendible y una
-                relacion cercana entre desarrollo, testing y objetivos de
-                producto.
-              </p>
-            </article>
+            <div className="rounded-[2rem] border border-white/10 p-8">
+              <div className="space-y-4">
+                {techStack.map((item) => (
+                  <div
+                    key={item}
+                    className="border-b border-white/10 pb-4 text-base text-stone-300 last:border-b-0 last:pb-0"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="grid gap-6">
+              {capabilities.map((capability) => (
+                <article
+                  key={capability.title}
+                  className="rounded-[1.75rem] border border-white/10 bg-white/[0.02] p-7"
+                >
+                  <h3 className="text-xl font-medium tracking-tight text-stone-100">
+                    {capability.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-stone-400">
+                    {capability.description}
+                  </p>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -502,6 +450,58 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="grid gap-10 border-b border-white/10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]">
+          <div className="space-y-3">
+            <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
+              Formacion
+            </p>
+            <p className="max-w-[190px] text-sm leading-6 text-stone-400">
+              Base academica y formacion complementaria relevante.
+            </p>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+            <div className="space-y-6">
+              {education.map((item) => (
+                <article
+                  key={item.title}
+                  className="rounded-[2rem] border border-white/10 p-8"
+                >
+                  <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
+                    Formacion academica
+                  </p>
+                  <h3 className="mt-4 text-2xl font-medium tracking-tight text-stone-100">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-stone-400">{item.institution}</p>
+                  <p className="mt-4 text-sm leading-7 text-stone-300">
+                    {item.description}
+                  </p>
+                </article>
+              ))}
+            </div>
+            <div className="space-y-6">
+              {certifications.map((item) => (
+                <article
+                  key={item.title}
+                  className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-8"
+                >
+                  <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
+                    Curso y certificacion
+                  </p>
+                  <h3 className="mt-4 text-2xl font-medium tracking-tight text-stone-100">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-stone-400">{item.institution}</p>
+                  <p className="mt-2 text-sm text-stone-500">{item.meta}</p>
+                  <p className="mt-4 text-sm leading-7 text-stone-300">
+                    {item.description}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section
           id="contacto"
           className="grid gap-10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]"
@@ -516,10 +516,10 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_320px]">
-            <div className="rounded-[2.25rem] border border-white/10 p-8 sm:p-10">
+            <div className="rounded-[2rem] border border-white/10 p-8 sm:p-10">
               <p className="max-w-3xl text-3xl font-medium leading-11 tracking-tight text-stone-100">
-                Si buscas a alguien que combine automatizacion, desarrollo web y
-                criterio de calidad en una misma ejecucion, podemos conversar.
+                Si te interesa colaborar o conocer mejor mi trabajo, no dudes
+                en ponerte en contacto conmigo.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
                 <a
@@ -529,17 +529,17 @@ export default function Home() {
                   Escribirme
                 </a>
                 <a
-                  href="https://github.com/5v2x2sszk7-netizen"
+                  href="https://www.linkedin.com/in/gustavo-angel-malo-bautista-650b67351"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-stone-100 transition hover:border-white/30 hover:bg-white/5"
                 >
-                  Ver GitHub
+                  Ver LinkedIn
                 </a>
               </div>
             </div>
 
-            <div className="rounded-[2.25rem] border border-white/10 bg-white/[0.02] p-8">
+            <div className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-8">
               <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
                 Contacto directo
               </p>
