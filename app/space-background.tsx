@@ -28,6 +28,9 @@ export default function SpaceBackground() {
     let animationFrame = 0;
     let pointerX = 0;
     let pointerY = 0;
+    let currentPointerX = 0;
+    let currentPointerY = 0;
+    let lastFrameTime = 0;
     let stars: Star[] = [];
 
     const maxDepth = 1600;
@@ -69,16 +72,24 @@ export default function SpaceBackground() {
       pointerY = 0;
     };
 
-    const render = () => {
+    const render = (time: number) => {
+      const deltaMs = lastFrameTime === 0 ? 16.67 : Math.min(time - lastFrameTime, 34);
+      const deltaFactor = deltaMs / 16.67;
+      lastFrameTime = time;
+
+      currentPointerX += (pointerX - currentPointerX) * 0.05 * deltaFactor;
+      currentPointerY += (pointerY - currentPointerY) * 0.05 * deltaFactor;
+
       context.clearRect(0, 0, width, height);
 
       const centerX = width / 2;
       const centerY = height / 2;
-      const driftX = pointerX * 36;
-      const driftY = pointerY * 26;
+      const driftX = currentPointerX * 42;
+      const driftY = currentPointerY * 30;
+      const depthSpeed = prefersReducedMotion ? 0.48 : 1.3;
 
       for (const star of stars) {
-        star.z -= prefersReducedMotion ? 0.85 : 2.2;
+        star.z -= depthSpeed * deltaMs;
 
         if (star.z <= 1) {
           star.x = (Math.random() - 0.5) * 2;
@@ -117,7 +128,7 @@ export default function SpaceBackground() {
     };
 
     resize();
-    render();
+    animationFrame = window.requestAnimationFrame(render);
 
     window.addEventListener("resize", resize);
     window.addEventListener("pointermove", handlePointerMove);

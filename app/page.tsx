@@ -189,7 +189,7 @@ export default function Home() {
             </div>
           </div>
 
-          <aside className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-8">
+          <aside className="ambient-card rounded-[2rem] border border-white/10 bg-white/[0.03] p-8">
             <div className="space-y-6">
               <div className="space-y-3">
                 <span className="inline-flex rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">
@@ -261,7 +261,7 @@ export default function Home() {
             {featuredProjects.map((project) => (
               <article
                 key={project.id}
-                className="group rounded-[2rem] border border-white/10 bg-white/[0.02] p-8 transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.035]"
+                className="ambient-card group rounded-[2rem] border border-white/10 bg-white/[0.02] p-8 transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.035]"
               >
                 <div className="grid gap-8 lg:grid-cols-[100px_minmax(0,1fr)]">
                   <div className="space-y-2">
@@ -301,7 +301,7 @@ export default function Home() {
                 </div>
 
                 {project.previewTitle ? (
-                  <div className="mt-8 overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#0d0d0d]">
+                  <div className="ambient-card mt-8 overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#0d0d0d]">
                     <div className="flex items-center gap-2 border-b border-white/10 px-5 py-3">
                       <span className="h-2.5 w-2.5 rounded-full bg-stone-600" />
                       <span className="h-2.5 w-2.5 rounded-full bg-stone-700" />
@@ -368,7 +368,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-            <div className="rounded-[2rem] border border-white/10 p-8">
+            <div className="ambient-card rounded-[2rem] border border-white/10 p-8">
               <div className="space-y-4">
                 {techStack.map((item) => (
                   <div
@@ -384,7 +384,7 @@ export default function Home() {
               {capabilities.map((capability) => (
                 <article
                   key={capability.title}
-                  className="rounded-[1.75rem] border border-white/10 bg-white/[0.02] p-7"
+                  className="ambient-card rounded-[1.75rem] border border-white/10 bg-white/[0.02] p-7"
                 >
                   <h3 className="text-xl font-medium tracking-tight text-stone-100">
                     {capability.title}
@@ -405,7 +405,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
-            <article className="rounded-[2rem] border border-white/10 p-8">
+            <article className="ambient-card rounded-[2rem] border border-white/10 p-8">
               <div className="flex flex-col gap-4 border-b border-white/10 pb-6 md:flex-row md:items-end md:justify-between">
                 <div>
                   <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
@@ -441,7 +441,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-8">
+            <article className="ambient-card rounded-[2rem] border border-white/10 bg-white/[0.02] p-8">
               <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
                 Sintesis del perfil
               </p>
@@ -468,7 +468,7 @@ export default function Home() {
               {education.map((item) => (
                 <article
                   key={item.title}
-                  className="rounded-[2rem] border border-white/10 p-8"
+                  className="ambient-card rounded-[2rem] border border-white/10 p-8"
                 >
                   <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
                     Formacion academica
@@ -487,7 +487,7 @@ export default function Home() {
               {certifications.map((item) => (
                 <article
                   key={item.title}
-                  className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-8"
+                  className="ambient-card rounded-[2rem] border border-white/10 bg-white/[0.02] p-8"
                 >
                   <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
                     Curso y certificacion
@@ -520,7 +520,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_320px]">
-            <div className="rounded-[2rem] border border-white/10 p-8 sm:p-10">
+            <div className="ambient-card rounded-[2rem] border border-white/10 p-8 sm:p-10">
               <p className="max-w-3xl text-3xl font-medium leading-11 tracking-tight text-stone-100">
                 Si te interesa colaborar o conocer mejor mi trabajo, no dudes
                 en ponerte en contacto conmigo.
@@ -543,7 +543,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-8">
+            <div className="ambient-card rounded-[2rem] border border-white/10 bg-white/[0.02] p-8">
               <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
                 Contacto directo
               </p>
