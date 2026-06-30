@@ -2,8 +2,15 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-neutral-100 font-sans selection:bg-neutral-800">
-      <div className="max-w-2xl mx-auto px-6 py-16 space-y-16">
+    <main className="min-h-screen bg-[#030712] text-neutral-100 font-sans relative overflow-x-hidden selection:bg-neutral-800">
+      
+      {/* FONDO DE REJILLA ESTILO ESPACIAL/GRID LINES */}
+      <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,#1f29371e_1px,transparent_1px),linear-gradient(to_bottom,#1f29371e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+      
+      {/* DESTELLO DE LUZ NEÓN DE FONDO */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-gradient-to-r from-blue-500/10 via-indigo-500/10 to-purple-500/10 blur-[120px] rounded-full pointer-events-none z-0" />
+
+      <div className="max-w-2xl mx-auto px-6 py-16 space-y-16 relative z-10">
         
         {/* HEADER */}
         <header className="space-y-4">
@@ -17,7 +24,7 @@ export default function Home() {
             Ingeniero en Desarrollo de Software especializado en el Aseguramiento de Calidad (QA) con un perfil híbrido enfocado en automatización end-to-end y sólidas bases en desarrollo backend con Laravel y frontend moderno con Next.js.
           </p>
           
-          {/* Enlaces de contacto limpios */}
+          {/* Enlaces de contacto */}
           <div className="flex flex-wrap gap-4 pt-2 text-sm text-neutral-400">
             <a href="mailto:gustavoangelmalob@gmail.com" className="hover:text-blue-400 transition flex items-center gap-1">
               📧 gustavoangelmalob@gmail.com
@@ -31,30 +38,30 @@ export default function Home() {
           </div>
         </header>
 
-        <hr className="border-neutral-800" />
+        <hr className="border-neutral-800/60" />
 
-        {/* SECCIÓN NUEVA: PROYECTOS DESTACADOS */}
+        {/* PROYECTOS DESTACADOS (ESTILO VIDEO REFERENCIA) */}
         <section className="space-y-6">
           <div className="space-y-1">
             <h2 className="text-2xl font-bold tracking-tight text-neutral-200">Proyectos Destacados</h2>
-            <p className="text-sm text-neutral-500">Diseñados para asegurar calidad y rendimiento</p>
+            <p className="text-sm text-neutral-500">Diseños interactivos enfocados en calidad y escalabilidad</p>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-6">
             {/* Proyecto 01 */}
-            <div className="p-6 bg-neutral-900/40 border border-neutral-800 rounded-2xl space-y-4">
+            <div className="p-6 bg-neutral-900/20 border border-neutral-800/80 rounded-2xl backdrop-blur-sm relative group hover:border-blue-500/30 transition-all duration-300">
               <div className="flex justify-between items-start">
                 <div>
-                  <span className="text-xs font-mono text-blue-400 uppercase tracking-wider">Proyecto 01</span>
-                  <h3 className="text-lg font-bold text-neutral-200 mt-1">Framework de Automatización Móvil</h3>
+                  <span className="text-[10px] font-mono font-bold text-blue-400 tracking-widest uppercase">01 // AUTOMATION FRAMEWORK</span>
+                  <h3 className="text-xl font-bold text-neutral-200 mt-1 group-hover:text-blue-400 transition-colors">Framework de Automatización Móvil</h3>
                 </div>
               </div>
-              <p className="text-sm text-neutral-400 leading-relaxed">
-                Diseño e implementación de un marco de trabajo para pruebas automatizadas end-to-end orientadas a dispositivos Android, optimizando los ciclos de regresión críticos.
+              <p className="text-sm text-neutral-400 leading-relaxed mt-3">
+                Diseño e implementación de un marco de trabajo para pruebas automatizadas end-to-end orientadas a dispositivos Android, optimizando los ciclos de regresión críticos y reduciendo tiempos manuales.
               </p>
-              <div className="flex flex-wrap gap-1.5 pt-2">
+              <div className="flex flex-wrap gap-1.5 pt-4">
                 {['Katalon Studio', 'Groovy', 'Android', 'Jira'].map((tech) => (
-                  <span key={tech} className="px-2.5 py-0.5 bg-neutral-800/60 text-[11px] font-mono rounded-md text-blue-300 border border-neutral-700/30">
+                  <span key={tech} className="px-2.5 py-0.5 bg-neutral-900/60 text-[11px] font-mono rounded-md text-neutral-300 border border-neutral-800">
                     {tech}
                   </span>
                 ))}
@@ -62,19 +69,19 @@ export default function Home() {
             </div>
 
             {/* Proyecto 02 */}
-            <div className="p-6 bg-neutral-900/40 border border-neutral-800 rounded-2xl space-y-4">
+            <div className="p-6 bg-neutral-900/20 border border-neutral-800/80 rounded-2xl backdrop-blur-sm relative group hover:border-purple-500/30 transition-all duration-300">
               <div className="flex justify-between items-start">
                 <div>
-                  <span className="text-xs font-mono text-purple-400 uppercase tracking-wider">Proyecto 02</span>
-                  <h3 className="text-lg font-bold text-neutral-200 mt-1">Portal de Recursos Humanos & Microservicios</h3>
+                  <span className="text-[10px] font-mono font-bold text-purple-400 tracking-widest uppercase">02 // FULL STACK CORE</span>
+                  <h3 className="text-xl font-bold text-neutral-200 mt-1 group-hover:text-purple-400 transition-colors">Portal de Recursos Humanos & Microservicios</h3>
                 </div>
               </div>
-              <p className="text-sm text-neutral-400 leading-relaxed">
-                Desarrollo full-stack de una plataforma web interactiva conectada a microservicios independientes, garantizando alta disponibilidad y consistencia de datos.
+              <p className="text-sm text-neutral-400 leading-relaxed mt-3">
+                Desarrollo full-stack de una plataforma web interactiva conectada a microservicios independientes, garantizando alta disponibilidad, seguridad por tokens y consistencia transaccional de datos.
               </p>
-              <div className="flex flex-wrap gap-1.5 pt-2">
+              <div className="flex flex-wrap gap-1.5 pt-4">
                 {['Next.js', 'Laravel', 'APIs', 'MySQL', 'Tailwind CSS'].map((tech) => (
-                  <span key={tech} className="px-2.5 py-0.5 bg-neutral-800/60 text-[11px] font-mono rounded-md text-purple-300 border border-neutral-700/30">
+                  <span key={tech} className="px-2.5 py-0.5 bg-neutral-900/60 text-[11px] font-mono rounded-md text-neutral-300 border border-neutral-800">
                     {tech}
                   </span>
                 ))}
@@ -83,29 +90,29 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="border-neutral-800" />
+        <hr className="border-neutral-800/60" />
 
         {/* SECCIÓN: SKILLS */}
         <section className="space-y-6">
           <h2 className="text-2xl font-bold tracking-tight text-neutral-200">Competencias Técnicas</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
-            <div className="p-6 bg-neutral-900/50 border border-neutral-800 rounded-2xl space-y-3">
+            <div className="p-6 bg-neutral-900/20 border border-neutral-800/80 rounded-2xl backdrop-blur-sm space-y-3">
               <h3 className="text-lg font-semibold text-blue-400">QA & Automatización</h3>
               <div className="flex flex-wrap gap-2">
                 {['Katalon Studio', 'Pruebas Funcionales', 'Regresión', 'Caja Blanca / Negra', 'Monkey Testing', 'Casos de Prueba'].map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-neutral-800 text-xs font-medium rounded-full text-neutral-300 border border-neutral-700/50">
+                  <span key={skill} className="px-3 py-1 bg-neutral-800/50 text-xs font-medium rounded-full text-neutral-300 border border-neutral-700/30">
                     {skill}
                   </span>
                 ))}
               </div>
             </div>
 
-            <div className="p-6 bg-neutral-900/50 border border-neutral-800 rounded-2xl space-y-3">
+            <div className="p-6 bg-neutral-900/20 border border-neutral-800/80 rounded-2xl backdrop-blur-sm space-y-3">
               <h3 className="text-lg font-semibold text-purple-400">Desarrollo Web & DB</h3>
               <div className="flex flex-wrap gap-2">
                 {['Next.js', 'React', 'Laravel', 'PHP', 'JavaScript', 'Python', 'Java', 'MySQL', 'Oracle'].map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-neutral-800 text-xs font-medium rounded-full text-neutral-300 border border-neutral-700/50">
+                  <span key={skill} className="px-3 py-1 bg-neutral-800/50 text-xs font-medium rounded-full text-neutral-300 border border-neutral-700/30">
                     {skill}
                   </span>
                 ))}
@@ -115,12 +122,12 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="border-neutral-800" />
+        <hr className="border-neutral-800/60" />
 
         {/* SECCIÓN: EXPERIENCIA LABORAL */}
         <section className="space-y-6">
           <h2 className="text-2xl font-bold tracking-tight text-neutral-200">Experiencia Profesional</h2>
-          <div className="space-y-8 border-l border-neutral-800 pl-4 ml-2">
+          <div className="space-y-8 border-l border-neutral-800/80 pl-4 ml-2">
             
             <div className="relative space-y-2">
               <div className="absolute -left-[21px] top-1.5 w-3 h-3 rounded-full bg-blue-500" />
