@@ -35,6 +35,48 @@ html {
   }
 }
 
+@keyframes section-orbit {
+  0% {
+    transform: translate3d(-4%, 0, 0) scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translate3d(4%, -3%, 0) scale(1.04);
+    opacity: 0.34;
+  }
+  100% {
+    transform: translate3d(-4%, 0, 0) scale(1);
+    opacity: 0.2;
+  }
+}
+
+@keyframes section-shimmer {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.12;
+  }
+  50% {
+    transform: translate3d(0, -1.5%, 0);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.12;
+  }
+}
+
+@keyframes ambient-card-drift {
+  0% {
+    transform: translate3d(-1.5%, 8px, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(2%, -4px, 0) scale(1.05);
+  }
+  100% {
+    transform: translate3d(-1.5%, 8px, 0) scale(1);
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -67,6 +109,109 @@ body {
   animation: glow-pulse 18s cubic-bezier(0.37, 0, 0.2, 1) infinite;
 }
 
+.section-ambient {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  --section-primary: rgba(92, 120, 235, 0.2);
+  --section-secondary: rgba(255, 255, 255, 0.07);
+  --section-tertiary: rgba(123, 145, 255, 0.1);
+  --section-particle-a: rgba(255, 255, 255, 0.2);
+  --section-particle-b: rgba(123, 145, 255, 0.14);
+  --section-blur: 30px;
+  --section-orbit-duration: 18s;
+  --section-shimmer-duration: 14s;
+}
+
+.section-ambient::before,
+.section-ambient::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.section-ambient::before {
+  inset: -10% -4%;
+  background:
+    radial-gradient(circle at 12% 18%, var(--section-primary), transparent 22%),
+    radial-gradient(circle at 84% 30%, var(--section-secondary), transparent 18%),
+    radial-gradient(circle at 50% 82%, var(--section-tertiary), transparent 20%);
+  filter: blur(var(--section-blur));
+  will-change: transform, opacity;
+  animation: section-orbit var(--section-orbit-duration) cubic-bezier(0.37, 0, 0.2, 1) infinite;
+}
+
+.section-ambient::after {
+  inset: 8% 10%;
+  background-image:
+    radial-gradient(circle, var(--section-particle-a) 0.8px, transparent 1.2px),
+    radial-gradient(circle, var(--section-particle-b) 0.8px, transparent 1.6px);
+  background-size: 170px 170px, 240px 240px;
+  background-position: 0 0, 90px 40px;
+  mask-image: radial-gradient(ellipse at center, black 52%, transparent 100%);
+  will-change: transform, opacity;
+  animation: section-shimmer var(--section-shimmer-duration) ease-in-out infinite;
+}
+
+.section-ambient > * {
+  position: relative;
+  z-index: 1;
+}
+
+.section-ambient-proyectos {
+  --section-primary: rgba(102, 136, 255, 0.24);
+  --section-secondary: rgba(255, 255, 255, 0.08);
+  --section-tertiary: rgba(90, 112, 208, 0.13);
+  --section-particle-a: rgba(255, 255, 255, 0.24);
+  --section-particle-b: rgba(122, 149, 255, 0.16);
+  --section-blur: 34px;
+  --section-orbit-duration: 16s;
+}
+
+.section-ambient-capacidades {
+  --section-primary: rgba(84, 151, 255, 0.18);
+  --section-secondary: rgba(244, 248, 255, 0.06);
+  --section-tertiary: rgba(110, 203, 255, 0.11);
+  --section-particle-a: rgba(255, 255, 255, 0.18);
+  --section-particle-b: rgba(111, 201, 255, 0.14);
+  --section-blur: 28px;
+  --section-shimmer-duration: 16s;
+}
+
+.section-ambient-experiencia {
+  --section-primary: rgba(143, 121, 255, 0.18);
+  --section-secondary: rgba(255, 255, 255, 0.06);
+  --section-tertiary: rgba(122, 149, 255, 0.1);
+  --section-particle-a: rgba(243, 245, 255, 0.18);
+  --section-particle-b: rgba(152, 135, 255, 0.14);
+  --section-blur: 32px;
+  --section-orbit-duration: 20s;
+}
+
+.section-ambient-formacion {
+  --section-primary: rgba(108, 130, 235, 0.16);
+  --section-secondary: rgba(255, 255, 255, 0.05);
+  --section-tertiary: rgba(187, 203, 255, 0.08);
+  --section-particle-a: rgba(255, 255, 255, 0.16);
+  --section-particle-b: rgba(181, 196, 255, 0.12);
+  --section-blur: 26px;
+  --section-orbit-duration: 22s;
+  --section-shimmer-duration: 17s;
+}
+
+.section-ambient-contacto {
+  --section-primary: rgba(122, 149, 255, 0.26);
+  --section-secondary: rgba(255, 255, 255, 0.09);
+  --section-tertiary: rgba(104, 130, 255, 0.14);
+  --section-particle-a: rgba(255, 255, 255, 0.24);
+  --section-particle-b: rgba(134, 165, 255, 0.18);
+  --section-blur: 36px;
+  --section-orbit-duration: 15s;
+  --section-shimmer-duration: 12s;
+}
+
 .ambient-card {
   position: relative;
   isolation: isolate;
@@ -90,6 +235,7 @@ body {
     transform 780ms cubic-bezier(0.22, 1, 0.36, 1),
     filter 780ms cubic-bezier(0.22, 1, 0.36, 1);
   filter: blur(12px);
+  animation: ambient-card-drift 16s ease-in-out infinite;
 }
 
 .ambient-card:hover::before {

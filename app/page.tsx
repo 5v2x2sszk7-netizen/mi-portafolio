@@ -243,7 +243,7 @@ export default function Home() {
 
         <section
           id="proyectos"
-          className="grid gap-10 border-b border-white/10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]"
+          className="section-ambient section-ambient-proyectos grid gap-10 border-b border-white/10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]"
         >
           <div className="space-y-3">
             <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
@@ -357,7 +357,7 @@ export default function Home() {
 
         <section
           id="capacidades"
-          className="grid gap-10 border-b border-white/10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]"
+          className="section-ambient section-ambient-capacidades grid gap-10 border-b border-white/10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]"
         >
           <div className="space-y-3">
             <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
@@ -398,7 +398,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="grid gap-10 border-b border-white/10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]">
+        <section className="section-ambient section-ambient-experiencia grid gap-10 border-b border-white/10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]">
           <div className="space-y-3">
             <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
               Experiencia
@@ -454,7 +454,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="grid gap-10 border-b border-white/10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]">
+        <section className="section-ambient section-ambient-formacion grid gap-10 border-b border-white/10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]">
           <div className="space-y-3">
             <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
               Formacion
@@ -508,7 +508,7 @@ export default function Home() {
 
         <section
           id="contacto"
-          className="grid gap-10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]"
+          className="section-ambient section-ambient-contacto grid gap-10 py-20 lg:grid-cols-[240px_minmax(0,1fr)]"
         >
           <div className="space-y-3">
             <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-stone-500">
