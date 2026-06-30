@@ -113,8 +113,11 @@ const contactLinks = [
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#0a0a0a] text-stone-100 selection:bg-stone-200 selection:text-stone-900">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.08),transparent_32%),radial-gradient(circle_at_85%_15%,rgba(255,255,255,0.04),transparent_24%)]" />
+    <main className="space-scene relative min-h-screen overflow-hidden text-stone-100 selection:bg-stone-200 selection:text-stone-900">
+      <div className="space-glow" />
+      <div className="space-stars" />
+      <div className="space-dust" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:7rem_7rem] [mask-image:radial-gradient(ellipse_at_center,black_52%,transparent_100%)] opacity-30" />
       <div className="relative mx-auto max-w-7xl px-6 py-6 sm:px-10 lg:px-12">
         <header className="flex items-center justify-between border-b border-white/10 py-5">
           <div className="space-y-1">
