@@ -23,30 +23,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@keyframes space-drift {
-  0% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(0, -18px, 0) scale(1.02);
-  }
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-}
-
-@keyframes star-pan {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  50% {
-    transform: translate3d(-12px, 8px, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 @keyframes glow-pulse {
   0% {
     opacity: 0.26;
@@ -70,13 +46,11 @@ body {
   position: relative;
   isolation: isolate;
   background:
-    radial-gradient(circle at top, rgba(22, 28, 45, 0.92), rgba(10, 10, 10, 0.98) 38%),
+    radial-gradient(circle at top, rgba(18, 24, 42, 0.92), rgba(10, 10, 10, 0.98) 36%),
     linear-gradient(180deg, rgba(9, 11, 18, 0.98), rgba(8, 8, 10, 1));
 }
 
-.space-glow,
-.space-stars,
-.space-dust {
+.space-glow {
   pointer-events: none;
   position: absolute;
   inset: 0;
@@ -84,31 +58,9 @@ body {
 
 .space-glow {
   background:
-    radial-gradient(circle at 20% 12%, rgba(125, 157, 255, 0.18), transparent 26%),
-    radial-gradient(circle at 82% 18%, rgba(93, 120, 226, 0.12), transparent 22%),
+    radial-gradient(circle at 18% 12%, rgba(125, 157, 255, 0.16), transparent 24%),
+    radial-gradient(circle at 82% 18%, rgba(93, 120, 226, 0.1), transparent 20%),
     radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.05), transparent 34%);
   filter: blur(8px);
   animation: glow-pulse 12s ease-in-out infinite;
-}
-
-.space-stars {
-  opacity: 0.55;
-  background-image:
-    radial-gradient(circle, rgba(255, 255, 255, 0.95) 0.8px, transparent 1.4px),
-    radial-gradient(circle, rgba(148, 163, 184, 0.55) 0.8px, transparent 1.6px),
-    radial-gradient(circle, rgba(255, 255, 255, 0.6) 0.6px, transparent 1.2px);
-  background-size: 180px 180px, 240px 240px, 320px 320px;
-  background-position: 0 0, 80px 30px, 120px 90px;
-  mask-image: radial-gradient(ellipse at center, black 58%, transparent 100%);
-  animation: star-pan 24s linear infinite;
-}
-
-.space-dust {
-  opacity: 0.35;
-  background:
-    radial-gradient(circle at 18% 62%, rgba(255, 255, 255, 0.06), transparent 18%),
-    radial-gradient(circle at 68% 38%, rgba(148, 163, 184, 0.06), transparent 24%),
-    radial-gradient(circle at 86% 72%, rgba(255, 255, 255, 0.05), transparent 16%);
-  filter: blur(24px);
-  animation: space-drift 18s ease-in-out infinite;
 }

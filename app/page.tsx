@@ -1,3 +1,5 @@
+import SpaceBackground from "./space-background";
+
 const featuredProjects = [
   {
     id: "01",
@@ -114,10 +116,9 @@ const contactLinks = [
 export default function Home() {
   return (
     <main className="space-scene relative min-h-screen overflow-hidden text-stone-100 selection:bg-stone-200 selection:text-stone-900">
+      <SpaceBackground />
       <div className="space-glow" />
-      <div className="space-stars" />
-      <div className="space-dust" />
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:7rem_7rem] [mask-image:radial-gradient(ellipse_at_center,black_52%,transparent_100%)] opacity-30" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.018)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:8rem_8rem] [mask-image:radial-gradient(ellipse_at_center,black_46%,transparent_100%)] opacity-20" />
       <div className="relative mx-auto max-w-7xl px-6 py-6 sm:px-10 lg:px-12">
         <header className="flex items-center justify-between border-b border-white/10 py-5">
           <div className="space-y-1">
